@@ -7,6 +7,9 @@ use users;
 CREATE TABLE cuentas (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
-    contra VARCHAR(225) NOT NULL
+    contra VARCHAR(225) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    userType VARCHAR(50),
+    UNIQUE KEY email_unico (email)
 );
 
